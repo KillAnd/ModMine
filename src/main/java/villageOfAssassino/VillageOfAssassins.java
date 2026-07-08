@@ -12,7 +12,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.eventbus.api.IEventBus;
 import org.slf4j.Logger;
 
-// The value here should match an entry in the META-INF/mods.toml file
+
 @Mod(VillageOfAssassins.MODID)
 public class VillageOfAssassins
 {
@@ -36,7 +36,7 @@ public class VillageOfAssassins
 
     public static final RegistryObject<EntityType<MobAssassino>> ASSASSINO = ENTITIES.register("assassino", () ->
             EntityType.Builder.of(MobAssassino::new, MobCategory.CREATURE)
-                    .sized(0.6F, 0.9F) // ширина и высота хитбокса
+                    .sized(0.7F, 1.0F) // ширина и высота моба
                     .clientTrackingRange(8) // дистанция прорисовки
                     .build("assassino"));
 }
